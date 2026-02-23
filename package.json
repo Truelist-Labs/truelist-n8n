@@ -1,0 +1,55 @@
+{
+  "name": "@truelist/n8n-nodes-truelist",
+  "version": "0.1.0",
+  "description": "n8n community node for Truelist email validation",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "truelist",
+    "email-validation",
+    "email-verification"
+  ],
+  "license": "MIT",
+  "homepage": "https://truelist.io",
+  "author": {
+    "name": "Truelist",
+    "email": "support@truelist.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/truelist/n8n-nodes-truelist.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && cp nodes/Truelist/truelist.svg dist/nodes/Truelist/ && cp nodes/Truelist/Truelist.node.json dist/nodes/Truelist/",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes credentials --ext .ts",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/TruelistApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Truelist/Truelist.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "n8n-workflow": "^1.0.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
