@@ -1,6 +1,6 @@
 {
   "name": "@truelist/n8n-nodes-truelist",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "n8n community node for Truelist email validation",
   "keywords": [
     "n8n-community-node-package",
@@ -13,11 +13,11 @@
   "homepage": "https://truelist.io",
   "author": {
     "name": "Truelist",
-    "email": "support@truelist.io"
+    "email": "hello@truelist.io"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/truelist/n8n-nodes-truelist.git"
+    "url": "https://github.com/Truelist-Labs/truelist-n8n.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

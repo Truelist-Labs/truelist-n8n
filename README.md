@@ -196,7 +196,7 @@ Permanently delete a batch and its results.
 - [API documentation](https://apidocs.truelist.io)
 - [Verification result codes](https://truelist.io/docs/usage/result-codes)
 - [n8n community nodes docs](https://docs.n8n.io/integrations/community-nodes/)
-- [Support](mailto:support@truelist.io)
+- [Support](mailto:hello@truelist.io)
 
 ## License
 
